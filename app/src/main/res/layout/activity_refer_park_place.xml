@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tabsScrollColor"
+        android:orientation="vertical">
+
+        <com.example.park.ui.MyToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/blue" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:background="@drawable/grey_white_itembackground"
+                    android:id="@+id/photoItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="车位照片"/>
+
+                    <ImageView
+                        android:id="@+id/edit_parkphoto"
+                        android:layout_width="90dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:background="@color/tabsScrollColor"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dip"
+                        android:src="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item2"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车位名称"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/parkName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item3"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车位价格"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/priceSpinner"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item4"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开放时间"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/startDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:textSize="13dp"
+                        android:hint="选择开始开放时间"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item10"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="停止开放"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/endDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:textSize="13dp"
+                        android:hint="选择停止开放时间"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item5"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车位地址"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/addressTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:textSize="13dp"
+                        android:hint="选择车位地址"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/item6"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/detailAddressTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="详细地址信息"
+                        android:textSize="13dp"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:cursorVisible="false"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item7"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车主信息"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/hostNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="13dp"
+                        android:cursorVisible="false"
+                        android:background="@null" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contactLayout"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系方式"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/contactTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="13dp"
+                        android:cursorVisible="false" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/phone"
+                        android:layout_gravity="center_vertical|right"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/item9"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/grey_white_itembackground"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车位说明"
+                        android:textSize="15dp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/commentTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="13dp"
+                        android:cursorVisible="false"
+                        android:background="@null" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="取消"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:id="@+id/go"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="前往车位"
+                        android:layout_centerHorizontal="true" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

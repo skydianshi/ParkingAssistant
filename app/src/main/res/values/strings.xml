@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">停车助手</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_header">Drawer Header</string>
+    <string name="login_success">login success</string>
+    <string name="login">登录</string>
+    <string name="Username">用户名</string>
+    <string name="Password">密码</string>
+    <string name="forgot_your_password">忘记密码？</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">重复密码</string>
+    <string name="next">NEXT</string>
+    <string name="register">注册</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_panorama">PanoramaActivity</string>
+    <string name="title_activity_other_pnorama">OtherPnoramaActivity</string>
+    <string name="title_activity_na_vi_path">NaViPathActivity</string>
+    <string name="title_activity_select_address">SelectAddressActivity</string>
+    <string name="title_activity_path_guide">PathGuideActivity</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="check_update">正在检查更新</string>
+    <string name="is_saving">保存中</string>
+    <string name="submit_question">正在提交请求</string>
+    <string name="bluetooth_connect">正在连接</string>
+    <string name="bluetooth_disconnect">正在关闭车位</string>
+
+
+    <string name="question1">关于本软件</string>
+    <string name="answer1">       本软件服务于【车位需求者】和【车位提供者】，车位需求者可通过本软件查找最近的停车位，进行无偿或有偿租用。车位提供者可将自己的私人车位在本软件进行包时段出租，并盈利。本软件公共车位数据库充足，完全不用担心找不到车位。</string>
+    <string name="question2">如何查找公共车位?</string>
+    <string name="answer2">        请点击软件找车位界面，然后软件会自动定位您的位置并查找最近的免费公共车位，您只需点击想去的车位，本软件就会为您规划好路线，最后请按照地图路线前往就可以找到停车位啦。若中途改变计划，可点击地图上的定位图标，软件回为您重新定位并筛选车位信息。</string>
+    <string name="question3">如何查找私人车位?</string>
+    <string name="answer3">        在我们的找车位界面最上边可以进行【公共车位】和【私人车位】的切换，若您不想将车停在公共场所，请点击找车位界面上边的【私人车位】按钮，软件会自动进行定位并推送最近的私人车位信息，显示出价格信息，您选择好车位后就可以按照软件提供的路线进行前往。</string>
+    <string name="question5">如何获取智能地锁?</string>
+    <string name="answer5">        所有软件注册用户可联系客服进行获取智能地锁，车位提供者可享受智能地锁前三个月免收租金，试用三个月后，需缴纳租金。也可在直接购买或在试用三个月结束后购买。其他用户不享受特权，需租用或直接购买。详情请咨询客服。</string>
+    <string name="question4">智能地锁的用途?</string>
+    <string name="answer4">        可通过手机联网远程升降地锁，或手动输入密码等功能，保障了车位的私有性，不给投机分子可乘之机；车位提供者可通过智能地锁，在本平台进行车位出租，预约成功的用户可获得地锁的动态密码，到达车位后进行降锁，避免物理操作的出错。</string>
+    <string name="question6">如何通过本软件盈利?</string>
+    <string name="answer6">         盈利主要面向车位提供者，车位提供者在发布车位之后，若有人预约了该车位，将按照车位提供者发布的计费信息进行计费，确认订单完成即可完成交易，平台将费用打入车位提供者账户。</string>
+    <string name="question7">如何添加车位信息?</string>
+    <string name="answer7">        添加车位信息需先登录，登录完成后在软件的发布车位界面，车位提供者可在这个界面进行车位信息的添加，编辑，发布的操作。其中，车位信息的地址信息请先进行地图定位选点，然后再填写详细的地址信息，确保车位需求者能顺利抵达车位。若车位位于小区中，请留言备注小区的具体情况。避免车位需求者被拒之门外。</string>
+    <string name="question8">为什么要缴纳押金?</string>
+    <string name="answer8">        押金是当今共享经济的必要条件之一，当然，也是为了约束光大用户在使用本软件的所有功能以及使用硬件设施的时候，能够做到文明规范，避免出现停车不付费情况，为车位提供者提供相应的保障，希望广大用户理解。</string>
+    <string name="question9">其他问题</string>
+    <string name="answer9">        请点击上方留言，我们将第一时间为您解答。</string>
+
+</resources>

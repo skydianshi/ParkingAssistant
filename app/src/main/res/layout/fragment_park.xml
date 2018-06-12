@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/tab" >
+
+
+        <Button
+            android:id="@+id/publicButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/right_tab"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="公共车位"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/personButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/left_tab"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="私人车位"
+            android:textColor="@color/tab"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/parkLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp" />
+
+
+</LinearLayout>
